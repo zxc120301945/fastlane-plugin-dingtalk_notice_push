@@ -27,12 +27,12 @@ Check out the [example `Fastfile`](fastlane/Fastfile) to see how to use this plu
 
 ```ruby
   ding_talk_notice(
-        api_key: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx", # 蒲公英用户api_key
-        app_key: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx", # 蒲公英应用app_key
-        access_token: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx", # 钉钉机器人access_token
+        api_key: "xxx", # 蒲公英用户api_key
+        app_key: "xxx", # 蒲公英应用app_key
+        access_token: "xxx", # 钉钉机器人access_token
         is_at_all: true, # 是否@所有人
-        at_mobiles: ["xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"], # @手机号
-        at_user_ids: ["xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"],# @用户ID
+        at_mobiles: ["xxx"], # @手机号 消息内容text内要带上"@手机号"，跟atMobiles参数结合使用，才有@效果
+        at_user_ids: ["xxx"],# @用户ID 消息内容content中要带上"@用户的userid"，跟atUserIds参数结合使用，才有@效果
         markdown_desc: "### App安装二维码") # 二维码描述(markdown格式)
 ```
 
